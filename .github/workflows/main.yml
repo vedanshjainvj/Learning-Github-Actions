@@ -1,11 +1,12 @@
 name: First workflow
 
 on: push
+
 jobs:
   build:
     run-ons: ubuntu-latest
-
-    stages:
+    steps:
       - uses: actions/checkout@v3
+      
       - name: Run a sample github action
-      - run: echo "This workflow run successfully for this actions/checkout"
+        run: echo "This workflow run successfully for this actions checkout"
